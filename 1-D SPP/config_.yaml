@@ -1,0 +1,62 @@
+EQ: true
+all_EQ: true
+b_size: 64
+beta1: 0.5
+beta2: 0.999
+clip_size: 32000
+conv_dim: 1
+cross_w: 0.001
+customize_dim_a: false
+customize_dim_b: true
+cyc_kl_b_w: 0.001
+cyc_recon_b_w: 10
+dim: 512
+epochs_a: 500
+epochs_b: 250
+filter_length: 1024
+gamma: 0.5
+hop_length: 256
+inter_dims_a:
+- 512
+- 256
+- 128
+- 64
+inter_dims_b:
+- 500
+- 400
+- 300
+- 200
+- 100
+- 64
+kl_a_w: 0.001
+kl_b_w: 0.001
+latent_dim: 64
+lr: 0.0001
+mag_power: 0.5
+noise_class_ids:
+- 0
+noise_clean_ba_w: 0.001
+noise_dataset: noise_new
+num_layers: 4
+num_workers: 16
+pure_noise_a: 0
+pure_noise_b: 0.2
+recon_a_w: 1
+recon_b_w: 1
+recon_latent_b_w: 1
+recon_loss_type: L2
+snr:
+- -5
+- 0
+- 5
+spp_threshold: 0.01
+sr: 16000
+step_size: 1000
+time:
+  kernel_size: 7
+  padding: 3
+  stride: 1
+urban_noise: false
+weight_decay: 0.0001
+win_length: 1024
+window: hann
